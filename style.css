@@ -17,7 +17,112 @@ h5,
 h6 {
   margin: 0;
 }
-
+ /*text styling*/ 
 p {
   margin: 0;
+}
+
+ /*navigation styling*/ 
+
+.name {
+  background-color: #ffb6c1;
+  width: 200px;
+}
+
+.nav {
+  background-color: rgb(178, 233, 234);
+  height: 60px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: baseline;
+}
+
+.nav h1 {
+  text-align: left;
+  padding-left: 50px;
+ 
+}
+
+.nav  ul li a:hover{
+  color: 	#ffb6c1;
+}
+
+.hero-banner {
+  height: 100px;
+  background-image: url(images/02-portfolio-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-text{
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+.flex-container,
+.page-container,
+.contact-container {
+  display: flex;
+  background-color: #6495ed;
+}
+
+.flex-container >div,
+.page-container >div,
+.contact-container >div {
+  background-color: #fff8dc;
+  margin: 0px;
+  padding: 60px;
+  font-size: 30px;
+  Border-right-style: solid;
+  border-color: #ffb6c1;
+  border-width: 5px;
+  text-decoration: underline;
+  text-align: right;
+
+}
+
+.aboutme,
+.worktitle,
+.contact {
+  margin-left: 32px;
+  color: aliceblue;
+}
+
+.aboutme h3,
+.worktitle h3, 
+.contact h3 {
+  text-align: center;
+}
+
+.flex-container img {
+  max-height: 100px;
+}
+
+.float-left {
+  float: left;
+  margin-right: 20px;
 }
