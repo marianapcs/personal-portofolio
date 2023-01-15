@@ -9,13 +9,44 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+/* Styling for the header section - this includes the navigation links */
+
+.navigation {
+  background-color:#f9cbd2;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* styling for h1 within header */
+
+.navigation h1 {
+  width: 25%;
+  font-weight: 500;
+  font-size: 30px;
+  color:aqua;
+  background-color: aliceblue;
+  border-style: solid;
+  border-color:azure;
+  border-width: 2.5px;
+}
+
+#navigation-links {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+
+}
+
+.navigation a:hover {
+  color: 	#ffb6c1;
+}
+
+
+.nav  ul li a:hover{
+  color: 	#ffb6c1;
 }
  /*text styling*/ 
 p {
@@ -60,9 +91,6 @@ nav ul {
   color:rgb(255, 250, 244) ;
 }
 
-.nav  ul li a:hover{
-  color: 	#ffb6c1;
-}
 
 .hero-banner {
   height: 100px;
