@@ -26,8 +26,8 @@ body {
   width: 25%;
   font-weight: 500;
   font-size: 30px;
-  color:aqua;
-  background-color: aliceblue;
+  color:rgb(112, 204, 232);
+  background-color: rgb(177, 209, 237);
   border-style: solid;
   border-color:azure;
   border-width: 2.5px;
@@ -40,55 +40,42 @@ body {
 
 }
 
+#navigation-links a {
+  color: aliceblue;
+}
+
 .navigation a:hover {
-  color: 	#ffb6c1;
+  color: 	#cf8590;
 }
 
 
-.nav  ul li a:hover{
-  color: 	#ffb6c1;
-}
- /*text styling*/ 
-p {
-  margin: 0;
-}
 
- /*navigation styling*/ 
-
-
-
-.nav {
-  background-color: rgb(178, 233, 234);
-  height: 60px;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: space-between;
-}
-
-nav ul {
-  list-style: none;
+ /*styling for hero banner which includes styling for background image*/ 
+.hero-banner {
+  margin: 0px 5%;
   display: flex;
-  align-content: space-between;
-  margin: 0;
-  padding: 0;
-  padding-inline-start: 500px;
+  justify-content:space-between;
+  align-items: flex-end;
+  background-image: url("images/IMG_6897.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
-.nav ul li a {
-  color: #fff;
-  padding: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  align-items: baseline;
-}
+ /*you need to size the profile image you added to hero banner*/
+ 
+ .hero-banner img {
+  width: 100px;
+  height: auto;
+ }
 
-.nav h1 {
-  text-align: left;
-  padding-left: 50px;
-  display: inline-block;
-  background-color: #f9cbd2;
-  color:rgb(255, 250, 244) ;
+.hero-banner h2 {
+  color:bisque;
+  background-color: azure;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: antiquewhite;
+  border-width: 2.5px;
 }
 
 
