@@ -24,10 +24,7 @@ p {
 
  /*navigation styling*/ 
 
-.name {
-  background-color: #ffb6c1;
-  width: 200px;
-}
+
 
 .nav {
   background-color: rgb(178, 233, 234);
@@ -43,7 +40,9 @@ nav ul {
   align-content: space-between;
   margin: 0;
   padding: 0;
+  padding-inline-start: 500px;
 }
+
 
 .nav ul li a {
   color: #fff;
@@ -56,7 +55,9 @@ nav ul {
 .nav h1 {
   text-align: left;
   padding-left: 50px;
- 
+  display: inline-block;
+  background-color: #f9cbd2;
+  color:rgb(255, 250, 244) ;
 }
 
 .nav  ul li a:hover{
@@ -83,15 +84,17 @@ nav ul {
 }
 
 
-.flex-container,
-.page-container,
+.flexcontainer,
+.pagecontainer,
 .contact-container {
   display: flex;
-  background-color: #6495ed;
+  background-color: #baeaeb;
+  
+
 }
 
-.flex-container >div,
-.page-container >div,
+.flexcontainer >div,
+.pagecontainer >div,
 .contact-container >div {
   background-color: #fff8dc;
   margin: 0px;
@@ -104,6 +107,12 @@ nav ul {
   text-align: right;
 
 }
+
+#avatar >div {
+  background-image: url(/Users/marianaserrao/Bootcamp/personal-portofolio/images/IMG_6897.jpg);
+}
+
+
 
 .aboutme,
 .worktitle,
@@ -125,4 +134,40 @@ nav ul {
 .float-left {
   float: left;
   margin-right: 20px;
+}
+
+/* Portofolio Grid CSS */
+
+
+#portofolioGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 200px 200px;
+  grid-template-areas: 
+        "horiseon horiseon horiseon horiseon"
+        "myparty xmasmiracles "
+        "firelite resume";
+}
+
+.portofolioGridArea{
+  background-color: aqua;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  display: grid;
+  align-content: end;
+  cursor: pointer;
+}
+
+/* Contact Section Styling */
+
+
+
+ /*Footer styling */
+ 
+footer {
+  padding: 30px;
+  clear: both;
+  text-align: left;
 }
