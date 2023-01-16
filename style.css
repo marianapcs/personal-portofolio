@@ -44,7 +44,7 @@ body {
   color: aliceblue;
 }
 
-.navigation a:hover {
+.navigation-links a:hover {
   color: 	#cf8590;
 }
 
@@ -56,6 +56,7 @@ body {
   display: flex;
   justify-content:space-between;
   align-items: flex-end;
+  /* change background img*/
   background-image: url("images/IMG_6897.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,102 +79,78 @@ body {
   border-width: 2.5px;
 }
 
+/*main content of the page styling */
 
-.hero-banner {
-  height: 100px;
-  background-image: url(images/02-portfolio-3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-
-.hero-text{
-  text-align: right;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-
-.flexcontainer,
-.pagecontainer,
-.contact-container {
-  display: flex;
-  background-color: #baeaeb;
-  
-
-}
-
-.flexcontainer >div,
-.pagecontainer >div,
-.contact-container >div {
-  background-color: #fff8dc;
-  margin: 0px;
-  padding: 60px;
-  font-size: 30px;
-  Border-right-style: solid;
-  border-color: #ffb6c1;
-  border-width: 5px;
-  text-decoration: underline;
-  text-align: right;
-
-}
-
-#avatar >div {
-  background-image: url(/Users/marianaserrao/Bootcamp/personal-portofolio/images/IMG_6897.jpg);
-}
-
-
-
-.aboutme,
-.worktitle,
-.contact {
-  margin-left: 32px;
-  color: aliceblue;
-}
-
-.aboutme h3,
-.worktitle h3, 
-.contact h3 {
-  text-align: center;
-}
-
-.flex-container img {
-  max-height: 100px;
-}
-
-.float-left {
-  float: left;
-  margin-right: 20px;
-}
-
-/* Portofolio Grid CSS */
-
-
-#portofolioGrid {
+main {
+  display: grid;
   margin: 0px 5%;
-  display: grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 200px 200px;
+  background-color: bisque;
+  grid-template-columns: 2fr 3fr 3fr;
+  grid-template-rows: 200px 400px 200px 200px 120px;
   grid-template-areas: 
-        "horiseon horiseon horiseon horiseon"
-        "myparty xmasmiracles "
-        "firelite resume";
+      "about-me about-me-section about-me-section"
+      "work study-guide study-guide"
+      "work console-finances horiseon-refactor"
+      "work password-generator project-5"
+      "contact contact-grid contact-grid";
 }
 
-.portofolioGridArea{
-  background-color: aqua;
+/* need to style the subheadings to be on the left of the page*/
+
+.subheading {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  font-size: 32px;
+  margin-right: 5px;
+  margin-top: 20px;
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-right-color: rgb(178, 225, 209);
+}
+
+/* need to style the headers to be on the left side of the page */
+
+h3 {
+  margin: 10px 10px;
+}
+
+/* subheadings need to be asisgned to a grid position as currently run along the top of the page.*/
+
+#about-me {
+  grid-area: about-me;
+}
+
+#work {
+  grid-area: work;
+  margin-bottom: 5px;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+.content {
+  border-style: solid;
+  border-width: 2.5px;
+  border-color:#f9cbd2;
+}
+
+/* styling for work section, need to include background image placement */
+
+.work-grid {
+  display: flex;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
-  display: grid;
-  align-content: end;
   cursor: pointer;
+  margin: 4.5px;
+  color: #f9cbd2;
+  opacity: 1;
+  transition: all 0.7s ease-in-out;
 }
+
+
 
 /* Contact Section Styling */
 

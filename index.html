@@ -23,48 +23,67 @@
   
 
   <!-- hero banner -->
-    <!-- amended title to My Portofolio -->
+    <!-- amend title to portfolio and use section to add figures in for image-->
   <section class="hero-banner">
-    <div class="hero-text">
-      <h2>My portfolio</h2>
-    </div>
+    <figure>
+      <img src="images/IMG_6897.jpg" alt="picture of developer Mariana Castro">
+    </figure>
+    <!-- add id to refer to in sytlesheet-->
+      <h2 id="subtitle">Welcome to Mariana Castro's Portfolio!</h2>
   </section>
 
 
-<section>
-      <div class="flexcontainer" id="aboutme">
-        <div id="avatar">About Me</div>
-       <p>My name is Mariana and I am currently undertaking the monumental task of learning front-end development. I admit it is not an easy task, in fact this challenge has almost made me give up hope on my ability to do this course. Fortunately I am stubborn and despite all odds I will continue until the very end. Here's hoping I start to understand what is going on because Katy Perry has never been so right: "I am a plastic bag floating in the wind", or at least that's what the inside of my brain feels like going through this bootcamp at the moment.   <p>
-      </div>
- </section>
+  <main>
+      <section class="subheading" id="about-me">
+        <h3> About Me</h3>
+      </section>
+      <section class="subheading" id="work">
+        <h3>My Work</h3>
+      </section>
+      <section class="subheading" id="contact">
+        <h3>Contact Me</h3>
+      </section>
+      <section class="content-grid" id="about-me-section">
+        <p>
+          "My name is Mariana and I am currently undertaking  front-end development bootcamp. It ihas not been an easy task, in fact this challenge has almost made me give up hope on more occasions than I'd like to admit.  This has been a challenge but I am enjoying the problem-solving I have had to face. "
+          </p>
+      </section>
 
-    <!-- portfolio container -->
-    <section class="pagecontainer" id="work">
-      <div>Work</div>
-    <section>
-        <div id="portofolioGrid">
-          <div id="horiseon" class="portofolioGridArea">
-            <div class="heading">Horiseon</div>
-          </div>
-          <div id="myparty" class="portofolioGridArea">
-            <div class="heading">MyParty</div>
-          </div>
-          <div id="xmasmiracles" class="portofolioGridArea">
-            <div class="heading">ChristmasMiracles</div>
-          </div>
-          <div id="firelite" class="portofolioGridArea">
-            <div class="heading">Firelite</div>
-          </div>
-          <div id="resume" class="portofolioGridArea">
-            <div class="heading">Resume</div>
-          </div>
-        </div>
-    </section>
-    </section>
-  
 
-    <!-- contact -->
-    <section class="contact-container" id="contact">
+    <!-- after many failures used anchor tags to wrap the grid area for the portfolio -->
+  <!-- add reference to console finances pageand horiseon code refactor and password generator as well as project 5 being blank-->
+        <a class="grid-area" id="study guide" href="https://marianapcs.github.io/prework-study-guide/" target="_blank">
+          <section> 
+            <h4> PreWork Study Guide</h4>
+          </section>
+        </a>
+        <a class="grid-area" id="console-finances" 
+        href="https://marianapcs.github.io/prework-study-guide/" target="_blank">
+          <section> 
+            <h4>Console Finances Js.</h4>
+          </section>
+        </a>
+        <a class="grid-area" id="horiseon-refactor" 
+        href="https://marianapcs.github.io/prework-study-guide/" target="_blank">
+          <section> 
+            <h4>Horiseon</h4>
+          </section>
+        </a>
+        <a class="grid-area" id="password-generator" 
+        href="https://marianapcs.github.io/prework-study-guide/" target="_blank">
+          <section> 
+            <h4>Password Generator</h4>
+          </section>
+        </a>
+        <a class="grid-area" id="project-5" 
+        href="https://marianapcs.github.io/prework-study-guide/" target="_blank">
+          <section> 
+            <h4>Project 5</h4>
+          </section>
+        </a>
+
+    <!--This is your footer-->
+    <section class="contact-container" id="contac-grid">
      <div>Contact Me</div>
      <section id="navigation">
       <div> 
