@@ -138,7 +138,7 @@ h3 {
 
 /* styling for work section, need to include background image placement */
 
-.work-grid {
+.grid-area {
   display: flex;
   background-position: center;
   background-size: cover;
@@ -150,16 +150,39 @@ h3 {
   transition: all 0.7s ease-in-out;
 }
 
-
-
-/* Contact Section Styling */
-
-
-
- /*Footer styling */
- 
-footer {
-  padding: 30px;
-  clear: both;
-  text-align: left;
+/* adding hover for aesthetics of the overall page*/
+.grid-area:hover {
+  color: black;
+  opacity: 0.7;
 }
+
+/* projects need to be set in place within the grid. background images for each projects need to be added */
+
+
+/* add images to all projects*/
+#study-guide {
+  grid-area: study-guide;
+  background-image: url("");
+  margin: ;
+}
+
+#console-finances {
+  grid-area: console-finances;
+  background-image: url("");
+}
+
+#horiseon-refactor {
+  grid-area: horiseon-refactor;
+  background-image: url("");
+}
+
+#password-generator {
+  grid-area: password-generator;
+  background-image: url("");
+}
+
+#project-5 {
+  grid-area: project-5;
+  background-image: url("");
+}
+
