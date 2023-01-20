@@ -263,5 +263,90 @@ padding: 1.5%;
     text-align: center;
     width: 60%;
   }
+ 
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px fit-content (150px) 80px 400px 200px 80px 100px;
+    grid-template-areas: 
+    "about-me about-me"
+    "about-me-section about-me-section"
+      "work work"
+      "study-guide study-guide"
+      "console-finances horiseon-refactor"
+      "password-generator project-5"
+      "contact contact"
+      "contact-grid contact-grid" ;
+  }
   
+  /*font size changed for smaller screen size*/
+ #about-me-section {
+  margin: 0px 5px;
+  font-size: 12px;
+ }
+
+ /*margins still need to be adjusted so that  the subheadings match the content*/
+ #study-guide,
+ #contact {
+  margin: 0px 5px;
+ }
+  
+}
+
+/*need to copy the media queries above for a smaller screen size with a max width of 769px*/
+
+@media  screen and (max-width: 769px) {
+  /* new grid layout for the smallest screen size*/
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px fit-content (150px) 80px 150px 150px 150px 150px 150px 80px 200px;
+    grid-template-areas: 
+    "about-me"
+    "about-me-section"
+      "work"
+      "study-guide"
+      "console-finances" "horiseon-refactor"
+      "password-generator"
+      "project-5"
+      "contact"
+      "contact-grid" ;
+  }
+  
+  /* Need to adjust width of the navigation bar*/
+
+  #navigation-links {
+    width: 80%;
+  }
+
+  h1 {
+    width: 60%;
+  }
+
+  .hero-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-banner img {
+    width: 100px;
+    height: auto;
+  }
+
+  .hero-banner h2 {
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+
+  #study-guide {
+    margin: 0px 5px 5px 5px;
+  }
+
+  /* links need to stack on top of each other vertically*/
+
+  #contact-grid {
+    margin: 0px 5px;
+    flex-direction: column;
+  }
+
 }
