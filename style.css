@@ -11,7 +11,7 @@ body {
 
 /* Styling for the header section - this includes the navigation links */
 
-.navigation {
+.navBar {
   background-color:#f9cbd2;
   display: flex;
   flex-direction: row;
@@ -22,7 +22,7 @@ body {
 
 /* styling for h1 within header */
 
-.navigation h1 {
+.navBar h1 {
   width: 25%;
   font-weight: 500;
   font-size: 30px;
@@ -30,7 +30,7 @@ body {
   background-color: rgb(177, 209, 237);
   border-style: solid;
   border-color:azure;
-  border-width: 2.5px;
+  border-width: 2px;
 }
 
 #navigation-links {
@@ -44,7 +44,7 @@ body {
   color: aliceblue;
 }
 
-.navigation-links a:hover {
+#navigation-links a:hover {
   color: 	#cf8590;
 }
 
@@ -76,7 +76,7 @@ body {
   margin-bottom: 20px;
   border-style: solid;
   border-color: antiquewhite;
-  border-width: 2.5px;
+  border-width: 2px;
 }
 
 /*main content of the page styling */
@@ -101,7 +101,7 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: start;
-  font-size: 32px;
+  font-size: 30px;
   margin-right: 5px;
   margin-top: 20px;
   border-right-style: solid;
@@ -132,13 +132,13 @@ h3 {
 
 .content {
   border-style: solid;
-  border-width: 2.5px;
-  border-color:#e8b6bd;
+  border-width: 3px;
+  border-color:#9e797e;
 }
 
 /* styling for work section, need to include background image placement */
 
-.grid-area {
+.grid {
   display: flex;
   background-position: center;
   background-size: cover;
@@ -146,12 +146,12 @@ h3 {
   cursor: pointer;
   margin: 4.5px;
   color:#cf8590;
-  opacity: 1;
-  transition: all 0.7s ease-in-out;
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
 }
 
 /* adding hover for aesthetics of the overall page*/
-.grid-area:hover {
+.grid:hover {
   color: black;
   opacity: 0.7;
 }
