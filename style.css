@@ -26,10 +26,10 @@ body {
   width: 25%;
   font-weight: 500;
   font-size: 30px;
-  color:rgb(112, 204, 232);
-  background-color: rgb(177, 209, 237);
+  color: 	#cf8590;
+  background-color: rgba(240, 255, 255, 0.606);
   border-style: solid;
-  border-color:azure;
+  border-color:#cf8590;
   border-width: 2px;
 }
 
@@ -41,11 +41,11 @@ body {
 }
 
 #navigation-links a {
-  color: aliceblue;
+  color: 	#cf8590;
 }
 
 #navigation-links a:hover {
-  color: 	#cf8590;
+  color: aliceblue;
 }
 
 
@@ -71,11 +71,11 @@ body {
  }
 
 .hero-banner h2 {
-  color:bisque;
+  color: 	#cf8590;
   background-color: azure;
   margin-bottom: 20px;
   border-style: solid;
-  border-color: antiquewhite;
+  border-color: #cf8590;
   border-width: 2px;
 }
 
@@ -113,6 +113,7 @@ main {
 
 h3 {
   margin: 10px 10px;
+  color: #846569;
 }
 
 /* subheadings need to be asisgned to a grid position as currently run along the top of the page.*/
