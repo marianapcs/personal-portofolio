@@ -88,11 +88,11 @@ main {
   grid-template-columns: 2fr 3fr 3fr;
   grid-template-rows: 200px 400px 200px 200px 120px;
   grid-template-areas: 
-      "about-me about-me-section about-me-section"
-      "work study-guide study-guide"
-      "work console-finances horiseon-refactor"
-      "work password-generator project-5"
-      "contact contact-grid contact-grid";
+      "about-me-h about-me-section about-me-section"
+      "work-h study-guide study-guide"
+      "work-h console-finances horiseon-refactor"
+      "work-h password-generator project-5"
+      "contact-h contact-grid contact-grid";
 }
 
 /* need to style the subheadings to be on the left of the page*/
@@ -117,17 +117,17 @@ h3 {
 
 /* subheadings need to be asisgned to a grid position as currently run along the top of the page.*/
 
-#about-me {
-  grid-area: about-me;
+#about-me-h {
+  grid-area: about-me-h;
 }
 
-#work {
-  grid-area: work;
+#work-h {
+  grid-area: work-h;
   margin-bottom: 5px;
 }
 
-#contact {
-  grid-area: contact;
+#contact-h {
+  grid-area: contact-h;
 }
 
 .content {
@@ -144,7 +144,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  margin: 4.5px;
+  margin: 5px;
   color:#cf8590;
   opacity: 0.8;
   transition: all 0.4s ease-in-out;
@@ -152,7 +152,7 @@ h3 {
 
 /* adding hover for aesthetics of the overall page*/
 .grid:hover {
-  color: black;
+  color: rgb(226, 208, 208);
   opacity: 0.7;
 }
 
@@ -163,7 +163,7 @@ h3 {
 #study-guide {
   grid-area: study-guide;
   background-image: url("images/02-portfolio-3.jpg");
-  margin: 20px 5px 5px 5px;
+  margin: 15px 5px 5px 5px;
 }
 
 #console-finances {
@@ -188,47 +188,48 @@ h3 {
 
 /* need to style sections outside of the project grid */
 
-#about-me {
+#about-me-section,
+#contact-grid {
   
   opacity: 1;
   display: flex;
   margin: 20px 5px 5px 5px;
 }
 
-#contact {
-  
-  opacity: 1;
-  display: flex;
-  margin: 20px 5px 5px 5px;
-}
 
 /* styling to keep sections within outlined margins outside project grids*/
 
-#about-me {
-grid-area: about-me;
+#about-me-section {
+grid-area: about-me-section;
 align-content: center;
 justify-content: start;
 flex-wrap: wrap;
 font-weight: bold;
-padding: 1.5%;
+padding: 2%;
 }
 
-#contact {
-  grid-area: contact;
+#contact-grid {
+  grid-area: contact-grid;
   justify-content: space-evenly;
   align-items: center;
 }
 
-/* need to decide on font sizes for the subheadings within contac me section */
+/* need to decide on font sizes for the subheadings within contact me section */
 
-#contact {
-  font-size: 25px;
-  color: black;
+#contact-grid a {
+  font-size: 20px;
+  color: 	#cf8590;
 }
+
+
+#contact-grid a:hover {
+  color: aliceblue;
+}
+
 
 .content h4 {
   background-color: #f9cbd2;
-  opacity: 1;
+  opacity: 0.8;
   padding: 20px;
   padding-bottom: 40px;
   height: 25px;
@@ -268,13 +269,13 @@ padding: 1.5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px fit-content (150px) 80px 400px 200px 80px 100px;
     grid-template-areas: 
-    "about-me about-me"
+    "about-me-h about-me-h"
     "about-me-section about-me-section"
-      "work work"
+      "work-h work-h"
       "study-guide study-guide"
       "console-finances horiseon-refactor"
       "password-generator project-5"
-      "contact contact"
+      "contact-h contact-h"
       "contact-grid contact-grid" ;
   }
   
@@ -286,7 +287,7 @@ padding: 1.5%;
 
  /*margins still need to be adjusted so that  the subheadings match the content*/
  #study-guide,
- #contact {
+ #contact-grid {
   margin: 0px 5px;
  }
   
@@ -301,14 +302,14 @@ padding: 1.5%;
     grid-template-columns: 1fr;
     grid-template-rows: 80px fit-content (150px) 80px 150px 150px 150px 150px 150px 80px 200px;
     grid-template-areas: 
-    "about-me"
+    "about-me-h"
     "about-me-section"
-      "work"
+      "work-h"
       "study-guide"
       "console-finances" "horiseon-refactor"
       "password-generator"
       "project-5"
-      "contact"
+      "contact-h"
       "contact-grid" ;
   }
   
