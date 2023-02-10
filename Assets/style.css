@@ -57,7 +57,7 @@
     justify-content:space-between;
     align-items: flex-end;
     /* change background img*/
-    background-image: url("/Users/marianaserrao/Bootcamp/personal-portofolio/Images/IMG_6897.jpg");
+    background-image: url("/Assets/Images/IMG_6897.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -163,28 +163,28 @@
   /* add images to all projects*/
   #study-guide {
     grid-area: study-guide;
-    background-image: url("/Users/marianaserrao/Bootcamp/personal-portofolio/Images/02-portfolio-3.jpg");
+    background-image: url("/Assets/Images/02-portfolio-3.jpg");
     margin: 15px 5px 5px 5px;
   }
   
   #console-finances {
     grid-area: console-finances;
-    background-image: url("/Users/marianaserrao/Bootcamp/personal-portofolio/Images/02-portfolio-2.jpg");
+    background-image: url("/Assets/Images/02-portfolio-2.jpg");
   }
   
   #horiseon-refactor {
     grid-area: horiseon-refactor;
-    background-image: url("/Users/marianaserrao/Bootcamp/personal-portofolio/Images/02-portfolio-4.jpg");
+    background-image: url("/Assets/Images/02-portfolio-4.jpg");
   }
   
   #password-generator {
     grid-area: password-generator;
-    background-image: url("/Users/marianaserrao/Bootcamp/personal-portofolio/Images/02-portfolio-1.jpg");
+    background-image: url("/Assets/Images/02-portfolio-1.jpg");
   }
   
   #project-5 {
     grid-area: project-5;
-    background-image: url("/Users/marianaserrao/Bootcamp/personal-portofolio/Images/balls-798372_1280.jpg");
+    background-image: url("/Assets/Images/balls-798372_1280.jpg");
   }
   
   /* need to style sections outside of the project grid */
